@@ -2,6 +2,7 @@ name: slack_echo_bot
 description: The simplest Slack Event API handler.
 
 dependencies:
+  args: ^1.5.2
   http: ^0.12.0+2
 
 dev_dependencies:
