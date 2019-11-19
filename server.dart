@@ -4,10 +4,10 @@ import './webhook.dart';
 
 Future main() async {
   HttpServer server = await HttpServer.bind(
-    InternetAddress.loopbackIPv4,
+    InternetAddress.anyIPv4,
     4000,
   );
-  print("Listening on localhost:4000...");
+  print("Listening on ${InternetAddress.anyIPv4.address}:4000...");
 
   await for (HttpRequest request in server) {
     try {
